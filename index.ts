@@ -1,7 +1,7 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import app from "./src/server.js";
+import app from "./src/server";
 
 const port = process.env.PORT;
 app.listen(port, () => {
