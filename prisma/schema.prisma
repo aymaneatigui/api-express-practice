@@ -27,5 +27,5 @@ model post {
   content String?
 
   authorId String
-  author   user   @relation(fields: [authorId], references: [id])
+  author   user   @relation(fields: [authorId], references: [id], onDelete: Cascade)
 }
